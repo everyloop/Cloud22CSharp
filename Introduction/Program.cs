@@ -104,11 +104,11 @@ Console.WriteLine();
 // Miniuppgift 2, gör ett program som frågar efter ett Namn, och sedan skriver ut det 10 gånger.
 
 Console.Write("Skriv ditt Namn: ");
-var FirstName = Console.ReadLine();
+var name = Console.ReadLine();
 
 for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine(FirstName);
+    Console.WriteLine(name);
 }
 
 
