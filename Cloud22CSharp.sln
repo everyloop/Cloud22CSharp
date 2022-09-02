@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VSDemo", "VSDemo\VSDemo.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Variabler", "Variabler\Variabler.csproj", "{46BE9CBC-22A1-4200-8DE5-80BD21C68FEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loopar", "Loopar\Loopar.csproj", "{AB9CF32F-5B7E-44B8-AFAE-B0E9B01685C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loopar", "Loopar\Loopar.csproj", "{AB9CF32F-5B7E-44B8-AFAE-B0E9B01685C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrayer", "Arrayer\Arrayer.csproj", "{22AC7757-D3F3-4B7D-A757-30B6D72F3439}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AB9CF32F-5B7E-44B8-AFAE-B0E9B01685C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9CF32F-5B7E-44B8-AFAE-B0E9B01685C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9CF32F-5B7E-44B8-AFAE-B0E9B01685C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AC7757-D3F3-4B7D-A757-30B6D72F3439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AC7757-D3F3-4B7D-A757-30B6D72F3439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AC7757-D3F3-4B7D-A757-30B6D72F3439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AC7757-D3F3-4B7D-A757-30B6D72F3439}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
