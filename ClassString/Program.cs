@@ -59,4 +59,3 @@ string[] cities = { "Stockholm", "Göteborg", "Malmö", "Borås" };
 Console.WriteLine("Concat / Join");
 Console.WriteLine(String.Concat(cities));
 Console.WriteLine(String.Join(" - ", cities));
-
