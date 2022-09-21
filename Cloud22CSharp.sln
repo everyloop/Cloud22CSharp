@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "Exceptions\Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilesAndFolders", "FilesAndFolders\FilesAndFolders.csproj", "{527D79DC-5837-4F6C-A98D-4B29E6554EF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{362AA671-E29A-42B1-A235-D1508CECA10E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes", "Classes\Classes.csproj", "{362AA671-E29A-42B1-A235-D1508CECA10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Properties\Properties.csproj", "{A355DA69-2B7A-4C29-86A0-78F2C29D05E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{362AA671-E29A-42B1-A235-D1508CECA10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{362AA671-E29A-42B1-A235-D1508CECA10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{362AA671-E29A-42B1-A235-D1508CECA10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A355DA69-2B7A-4C29-86A0-78F2C29D05E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A355DA69-2B7A-4C29-86A0-78F2C29D05E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A355DA69-2B7A-4C29-86A0-78F2C29D05E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A355DA69-2B7A-4C29-86A0-78F2C29D05E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
