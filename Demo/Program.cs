@@ -1,5 +1,7 @@
 ﻿ConsoleKey key;
+ConsoleColor color;
 
+color = ConsoleColor.Black;
 int width = 15;
 int height = 10;
 DrawBox(width, height);
