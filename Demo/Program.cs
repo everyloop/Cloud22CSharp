@@ -4,34 +4,37 @@ int width = 15;
 int height = 10;
 DrawBox(width, height);
 
-int playerXPos = 5;
-int playerYPos = 2;
-
 Console.CursorVisible = false;
 
-Console.SetCursorPosition(playerXPos, playerYPos);
-Console.Write("O");
+Player player1 = new Player(2, 2, 'A');
+Player player2 = new Player(5, 6, 'B');
 
 do
 {
     key = Console.ReadKey(true).Key;
 
-    Console.SetCursorPosition(playerXPos, playerYPos);
-    Console.Write("-");
-
-    if (key == ConsoleKey.LeftArrow && playerXPos > 1)
+    if (key == ConsoleKey.LeftArrow)
     {
-        playerXPos--;
+        player1.X--;
+        player2.X--;
     }
 
-    if (key == ConsoleKey.RightArrow && playerXPos < width - 2)
+    if (key == ConsoleKey.RightArrow)
     {
-        playerXPos++;
+        player1.X++;
+        player2.X++;
     }
 
-    Console.SetCursorPosition(playerXPos, playerYPos);
-    Console.Write("O");
-
+    if (key == ConsoleKey.UpArrow)
+    {
+        player1.Y--;
+        player2.Y--;
+    }
+    if (key == ConsoleKey.DownArrow)
+    {
+        player1.Y++;
+        player2.Y++;
+    }
 } while (key != ConsoleKey.Escape);
 
 void DrawBox(int width, int height)
@@ -44,4 +47,57 @@ void DrawBox(int width, int height)
         }
         Console.WriteLine();
     }
+}
+
+public class Player
+{
+    private char playerCharacter;
+
+    private int _x = 5;
+    public int X
+    {
+        get { return _x; }
+        set { 
+            if (_x != value)
+            {
+                RemovePlayer();
+                _x = Math.Clamp(value, 1, 13);
+                DrawPlayer();
+            }
+        }
+    }
+
+    private int _y = 2;
+    public int Y
+    {
+        get { return _y; }
+        set {
+            if (_y != value)
+            {
+                RemovePlayer();
+                _y = Math.Clamp(value, 1, 8);
+                DrawPlayer();
+            }
+        }
+    }
+
+    public Player(int startX, int startY, char playerCharacter = 'O')
+    {
+        _x = Math.Clamp(startX, 1, 13);
+        _y = Math.Clamp(startY, 1, 8);
+        this.playerCharacter = playerCharacter;
+        DrawPlayer();
+    }
+    private void RemovePlayer()
+    { 
+        Console.SetCursorPosition(X, Y);
+        Console.Write("-");
+    }
+
+    private void DrawPlayer()
+    {
+        Console.SetCursorPosition(X, Y);
+        Console.Write(playerCharacter);
+    }
+
 }
