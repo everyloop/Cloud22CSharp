@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NoTopLevelStatements": {
+      "commandName": "Project",
+      "commandLineArgs": "ett två tre"
+    }
+  }
+}
