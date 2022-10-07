@@ -49,15 +49,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoTopLevelStatements", "NoT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konstruktor", "Konstruktor\Konstruktor.csproj", "{67B0AF78-10D9-4893-9488-65A742E2DBCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{1EC8F959-7C7D-417F-90F8-8CF67DC8B801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List", "List\List.csproj", "{1EC8F959-7C7D-417F-90F8-8CF67DC8B801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{DDFFFC48-7957-499D-90E6-4E056549D473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionary", "Dictionary\Dictionary.csproj", "{DDFFFC48-7957-499D-90E6-4E056549D473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{E47839AC-BD35-42F8-AD37-61CE2110659A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Stack\Stack.csproj", "{E47839AC-BD35-42F8-AD37-61CE2110659A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{6CBE6E62-87E5-4BDB-8578-38E7D156962F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{6CBE6E62-87E5-4BDB-8578-38E7D156962F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{81D91CFF-0666-4C21-8650-2F780243FC4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{81D91CFF-0666-4C21-8650-2F780243FC4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Null", "Null\Null.csproj", "{62BF1A90-BBCD-44BF-ADA7-94B618CA70BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{6485BE1E-C0B5-4B9D-9A2A-CDD2D6EF4DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousTypes", "AnonymousTypes\AnonymousTypes.csproj", "{518F9503-998D-430A-9EAA-4A57FDF791D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{FF2CD774-FAD5-4FB2-B8F4-9953C5C40EC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +185,22 @@ Global
 		{81D91CFF-0666-4C21-8650-2F780243FC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81D91CFF-0666-4C21-8650-2F780243FC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81D91CFF-0666-4C21-8650-2F780243FC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62BF1A90-BBCD-44BF-ADA7-94B618CA70BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62BF1A90-BBCD-44BF-ADA7-94B618CA70BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62BF1A90-BBCD-44BF-ADA7-94B618CA70BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62BF1A90-BBCD-44BF-ADA7-94B618CA70BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6485BE1E-C0B5-4B9D-9A2A-CDD2D6EF4DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6485BE1E-C0B5-4B9D-9A2A-CDD2D6EF4DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6485BE1E-C0B5-4B9D-9A2A-CDD2D6EF4DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6485BE1E-C0B5-4B9D-9A2A-CDD2D6EF4DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518F9503-998D-430A-9EAA-4A57FDF791D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518F9503-998D-430A-9EAA-4A57FDF791D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518F9503-998D-430A-9EAA-4A57FDF791D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518F9503-998D-430A-9EAA-4A57FDF791D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2CD774-FAD5-4FB2-B8F4-9953C5C40EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2CD774-FAD5-4FB2-B8F4-9953C5C40EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2CD774-FAD5-4FB2-B8F4-9953C5C40EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2CD774-FAD5-4FB2-B8F4-9953C5C40EC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
