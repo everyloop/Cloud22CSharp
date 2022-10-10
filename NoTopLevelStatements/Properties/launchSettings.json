@@ -2,7 +2,7 @@
   "profiles": {
     "NoTopLevelStatements": {
       "commandName": "Project",
-      "commandLineArgs": "ett två tre"
+      "commandLineArgs": "-new mylist english swedish"
     }
   }
 }
