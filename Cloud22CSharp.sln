@@ -67,9 +67,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnonymousTypes", "Anonymous
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ", "LINQ\LINQ.csproj", "{FF2CD774-FAD5-4FB2-B8F4-9953C5C40EC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{04BA3AF7-E726-43DB-8D5C-AD3EFB843B9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Events\Events.csproj", "{04BA3AF7-E726-43DB-8D5C-AD3EFB843B9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsIntroduction", "WinFormsIntroduction\WinFormsIntroduction.csproj", "{84ACF399-7F70-45BE-AA7E-13E8394CD580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsIntroduction", "WinFormsIntroduction\WinFormsIntroduction.csproj", "{84ACF399-7F70-45BE-AA7E-13E8394CD580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsControls", "WinFormsControls\WinFormsControls.csproj", "{7906E665-10FB-4EE1-B5FA-15523FEBFAA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{84ACF399-7F70-45BE-AA7E-13E8394CD580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84ACF399-7F70-45BE-AA7E-13E8394CD580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84ACF399-7F70-45BE-AA7E-13E8394CD580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7906E665-10FB-4EE1-B5FA-15523FEBFAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7906E665-10FB-4EE1-B5FA-15523FEBFAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7906E665-10FB-4EE1-B5FA-15523FEBFAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7906E665-10FB-4EE1-B5FA-15523FEBFAA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
