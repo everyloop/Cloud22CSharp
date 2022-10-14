@@ -71,9 +71,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Events\Events.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsIntroduction", "WinFormsIntroduction\WinFormsIntroduction.csproj", "{84ACF399-7F70-45BE-AA7E-13E8394CD580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsControls", "WinFormsControls\WinFormsControls.csproj", "{7906E665-10FB-4EE1-B5FA-15523FEBFAA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsControls", "WinFormsControls\WinFormsControls.csproj", "{7906E665-10FB-4EE1-B5FA-15523FEBFAA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsMultiForms", "WinFormsMultiForms\WinFormsMultiForms.csproj", "{964265A8-3FB1-45EC-82DF-DC425F26C33E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsMultiForms", "WinFormsMultiForms\WinFormsMultiForms.csproj", "{964265A8-3FB1-45EC-82DF-DC425F26C33E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAdvanced", "WinFormsAdvanced\WinFormsAdvanced.csproj", "{67D6DB37-A825-489B-A9A6-B04FC9CBC608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{964265A8-3FB1-45EC-82DF-DC425F26C33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{964265A8-3FB1-45EC-82DF-DC425F26C33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{964265A8-3FB1-45EC-82DF-DC425F26C33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D6DB37-A825-489B-A9A6-B04FC9CBC608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D6DB37-A825-489B-A9A6-B04FC9CBC608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D6DB37-A825-489B-A9A6-B04FC9CBC608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D6DB37-A825-489B-A9A6-B04FC9CBC608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
