@@ -1,39 +1,27 @@
-﻿Human me = new Human();
+﻿var generatedNumber = GenerateWithoutYield(100000000);
 
-//me.BMI = 25;
-
-double myDouble = me.BMI;
-
-Console.WriteLine(me);
-
-class Human
+foreach (int item in generatedNumber)
 {
-    private double _BMI = 25.0;
-    /*
-    public double BMI 
-    { 
-        get { return _BMI; } 
-        //set { _BMI = value; }
-    }
-    */
-    /*  Expression Body
-    public double BMI
-    {
-        get => _BMI;
-        set => _BMI = value;
-    }
-    */
+	Console.WriteLine(item);
+	if (item >= 10) break;
+}
 
-    public double BMI => _BMI;
+Console.WriteLine("The end!");
 
+IEnumerable<int> GenerateWithoutYield(int maxValue)
+{
+	var i = 0;
+	var list = new List<int>();
+	while (i < maxValue) list.Add(++i);
+	return list;
+}
 
-    public override string ToString()
-    {
-        return $"I'm a human with BMI: {_BMI}";
-    }
-
-    // Method with expression body syntax:
-    //public override string ToString() => $"I'm a human with BMI: {_BMI}";
-
-
+IEnumerable<int> GenerateWithYield(int maxValue)
+{
+	var i = 0;
+	while (i < maxValue)
+	{
+		i++;
+		yield return i;
+	}
 }
