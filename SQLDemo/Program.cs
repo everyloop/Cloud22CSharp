@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 
-string connectionString = "Server=localhost;Database=everyloop;Trusted_Connection=True;TrustServerCertificate=True";
+string connectionString = "Server=localhost;Database=everyloop;uid=cloud22;pwd=cloud22;TrustServerCertificate=True";
 
 using SqlConnection connection = new SqlConnection(connectionString);
 connection.Open();
@@ -11,19 +11,21 @@ while (true)
     string searchString = Console.ReadLine();
 
     if (String.IsNullOrWhiteSpace(searchString)) break;
-    FetchAirports(connection, searchString);
+    FetchAirports(connection, searchString, 8);
 }
 
-static void FetchAirports(SqlConnection connection, string searchString)
+static void FetchAirports(SqlConnection connection, string searchString, int max)
 {
     try
     {
-        string query = $"select top 5 Iata, [Airport Name], [Location Served] from airports where [airport name] like '%{searchString}%'";
+        string query = "select top (@maxCount) Iata, [Airport Name], [Location Served] from airports where [airport name] like concat('%', @searchString ,'%')";
 
         Console.WriteLine($"Sending query: {query}");
         Console.WriteLine();
 
         SqlCommand command = new SqlCommand(query, connection);
+        command.Parameters.Add("searchString", System.Data.SqlDbType.NVarChar).Value = searchString;
+        command.Parameters.Add("maxCount", System.Data.SqlDbType.Int).Value = max;
 
         using SqlDataReader reader = command.ExecuteReader();
         Console.Write(reader.GetName(0).ToString().PadRight(10).ToUpper());
