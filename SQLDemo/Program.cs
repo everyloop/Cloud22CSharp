@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 
-string connectionString = "Server=localhost;Database=everyloop;uid=cloud22;pwd=cloud22;TrustServerCertificate=True";
+string connectionString = "Server=localhost;Database=everyloop;Trusted_Connection=True;TrustServerCertificate=True";
 
 using SqlConnection connection = new SqlConnection(connectionString);
 connection.Open();
