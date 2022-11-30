@@ -4,6 +4,7 @@ using EFSchoolDemo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFSchoolDemo.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    partial class SchoolContextModelSnapshot : ModelSnapshot
+    [Migration("20221130105505_AddCoursesAndGrades")]
+    partial class AddCoursesAndGrades
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,20 +44,6 @@ namespace EFSchoolDemo.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Courses");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "C#",
-                            TeacherName = "Fredrik Johansson"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Databaser",
-                            TeacherName = "Fredrik Johansson"
-                        });
                 });
 
             modelBuilder.Entity("EFSchoolDemo.Models.Grade", b =>
@@ -73,44 +62,6 @@ namespace EFSchoolDemo.Migrations
                     b.HasIndex("StudentId");
 
                     b.ToTable("Grades");
-
-                    b.HasData(
-                        new
-                        {
-                            CourseId = 1,
-                            StudentId = 1,
-                            Score = 3.1f
-                        },
-                        new
-                        {
-                            CourseId = 1,
-                            StudentId = 2,
-                            Score = 2.2f
-                        },
-                        new
-                        {
-                            CourseId = 1,
-                            StudentId = 3,
-                            Score = 4.3f
-                        },
-                        new
-                        {
-                            CourseId = 2,
-                            StudentId = 1,
-                            Score = 3.4f
-                        },
-                        new
-                        {
-                            CourseId = 2,
-                            StudentId = 2,
-                            Score = 2.4f
-                        },
-                        new
-                        {
-                            CourseId = 2,
-                            StudentId = 3,
-                            Score = 4.5f
-                        });
                 });
 
             modelBuilder.Entity("EFSchoolDemo.Models.Student", b =>
